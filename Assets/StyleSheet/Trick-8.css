@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.box {
+  width: 700px;
+  height: 500px;
+  /* background-color: aqua; */
+  /* border: 1px solid black; */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+  /* transform: perspective(2800px) rotateX(15deg); */
+}
+.box:hover {
+  transform: perspective(3800px) rotate3d(-1, 10, 10, 20deg);
+}
+.box:hover > div:nth-of-type(1) {
+  transform: perspective(3800px) rotateY(165deg);
+}
+.box > .paper {
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  transition: 1s;
+}
+.box > .paper:nth-of-type(1) {
+  transform: perspective(2800px) rotateY(20deg) translateZ(10px);
+}
+.box > .paper:nth-of-type(1) > div:nth-of-type(1) {
+  background-image: url(../Image/197f91d703c240e0b8aaf4f9789f5ca8.jpg);
+  background-size: cover;
+  border-radius: 5px;
+}
+.box > .paper:nth-of-type(1) > div:nth-of-type(2) {
+  background-image: url(../Image/n_nameh\ copy.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}
+.box > .paper:nth-of-type(2) {
+  transform: perspective(2800px) rotateY(20deg) translateZ(6px);
+}
+.box > .paper:nth-of-type(2) > div:nth-of-type(1) {
+  background-image: url(../Image/n_nameh.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}
+.box > .paper:nth-of-type(2) > div:nth-of-type(2) {
+  background-image: url(../Image/n_nameh\ copy.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}
+.box > .paper:nth-of-type(3) {
+  transform: perspective(2800px) rotateY(20deg) translateZ(4px);
+}
+.box > .paper:nth-of-type(3) > div:nth-of-type(1) {
+  background-image: url(../Image/n_nameh.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}
+.box > .paper > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+  transition: 1s;
+}
+.box > .paper > div:nth-of-type(2) {
+  transform: translateZ(-1px);
+}
+.box .paper2:hover {
+  transform: perspective(2800px) rotateY(160deg) !important;
+}/*# sourceMappingURL=Trick-8.css.map */
